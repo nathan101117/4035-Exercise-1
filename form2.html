@@ -1,52 +1,40 @@
 <form method="POST" action="process.php">
     <fieldset>
-        <legend>Details</legend>
+        <legend>Business Form</legend>
         <p>
-            <label>Title: </label>
-            <input type="text" name="title" />
+            <label>Business Name: </label>
+            <input type="text" name="businessName" />
         </p>
         <p>
-            <label>Country: </label>
-            <select name="where">
-                <option>Choose a country</option>
-                <option>Canada</option>
-                <option>Finland</option>
-                <option>United States</option>
+            <label>Email Address: </label>
+            <input type="email" name="email" />
+        </p>
+        <p>
+            <label>Phone Number: </label>
+            <input type="tel" name="phone" />
+        </p>
+        <p>
+            <label>Preferred Color: </label>
+            <select name="brandingColor">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
             </select>
         </p>
-    </fieldset>
-    
-        <fieldset>
-        <legend>More information</legend>
         <p>
-            <label>Title: </label>
-            <input type="text" name="title" />
+            <label>Business Logo: </label>
+            <input type="file" name="logo" />
         </p>
         <p>
-            <label>Input fields </label>
-            <input type="search" placeholder="enter search text" />
-            <input type="email" />
-            <input type="url" />
-        
-        </p>
-        <input type="submit" />
-    </fieldset>
-
-        <fieldset>
-        <legend>Details</legend>
-        <p>
-            <label>Title: </label>
-            <input type="text" name="title" />
+            <label>Number of Employees: </label>
+            <input type="number" name="employees" min="1" />
         </p>
         <p>
-            <label>Country: </label>
-            <select name="where">
-                <option>Choose a country</option>
-                <option>Canada</option>
-                <option>Finland</option>
-                <option>United States</option>
-            </select>
+            <label>Agree to Terms: </label>
+            <input type="checkbox" name="terms" /> I agree
         </p>
-        <input type="submit" />
+        <input type="submit" value="Submit" />
     </fieldset>
 </form>
